@@ -24,7 +24,7 @@ router.get("/", async(req, res) => {
 // @route   GET api/shirts/:shirts_id
 // @desc    Get shirts by ID
 // @access  Public
-router.get('/"shirts_id', async(req, res) => {
+router.get('/:shirts_id', async(req, res) => {
     try {
         let selectedShirt = await Shirts.findById(req.params.shirts_id);
 
