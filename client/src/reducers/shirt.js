@@ -3,7 +3,7 @@ import {
     GET_SHIRT,
     SHIRT_ERROR,
     CLEAR_SELECTED_SHIRT,
-    ADD_PRODUCTS_SHIRTS_SUCCESS,
+    ADD_PRODUCT_SHIRTS_SUCCESS,
     DONE_LOADING_SHIRTS,
     DONE_DELETING_SHIRTS,
 } from "../actions/types";
@@ -47,7 +47,7 @@ export default function(state = initialState, action) {
                 selectedShirt: null,
                 loadingSelectedShirt: false,
             };
-        case ADD_PRODUCTS_SHIRTS_SUCCESS:
+        case ADD_PRODUCT_SHIRTS_SUCCESS:
             return {
                 ...state,
                 isAddingShirtsSuccessful: true,

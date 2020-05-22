@@ -35,7 +35,7 @@ export const doneLoading = () => async(dispatch) => {
     });
 };
 
-// Get a specific shoe by ID
+// Get a specific shirt by ID
 export const getShirt = (id) => async(dispatch) => {
     try {
         const res = await axios.get(`/api/shirts/${id}`);

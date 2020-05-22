@@ -1,37 +1,38 @@
-import React, { Suspense } from "react";
-import { Route, Switch } from "react-router-dom";
-import Auth from "../hoc/auth";
-// pages for this product
+import React, { Fragment, useState, useEffect } from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
-//null   Anyone Can go inside
-//true   only logged in user can go inside
-//false  logged in user can't go inside
+import Login from "./components/auth/Login";
+import Register from "./components/auth/Register";
+import setAuthToken from "./utilities/setAuthToken";
+import ShirtsForm from "./components/forms/ShirtsForm";
+import ScrollToTop from "./components/TopScroll/TopScroll";
+import HomePage from "./components/page/HomePage";
 
-function App() {
+//Redux
+import { Provider } from "react-redux";
+import store from "./store";
+
+if (localStorage.token) {
+    setAuthToken(localStorage.token);
+}
+
+const App = () => {
     return ( <
-        Suspense fallback = { < div > Loading... < /div>}> { " " } <
-            NavBar / >
-            <
-            div style = {
-                { paddingTop: "69px", minHeight: "calc(100vh - 80px)" } } >
-            <
-            Switch >
-            <
-            Route exact path = "/"
-            component = { Auth(LandingPage, null) }
-            />{" "} <
-            Route exact path = "/login"
-            component = { Auth(LoginPage, false) }
-            />{" "} <
-            Route exact path = "/register"
-            component = { Auth(RegisterPage, false) }
-            />{" "} <
-            /Switch>{" "} <
-            /div>{" "} <
-            Footer / >
-            <
-            /Suspense>
-        );
-    }
+        Provider store = { store } >
+        <
+        Router >
+        <
+        Fragment >
+        <
+        ScrollToTop / >
+        <
+        Route exact path = "/"
+        component = { HomePage }
+        />{" "} <
+        /Fragment>{" "} <
+        /Router>{" "} <
+        /Provider>
+    );
+};
 
-    export default App;
+export default App;
