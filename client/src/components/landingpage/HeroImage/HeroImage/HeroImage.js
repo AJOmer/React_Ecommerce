@@ -1,10 +1,10 @@
-import React    from "react";
-import template from "./HeroImage.jsx";
-
-class HeroImage extends React.Component {
-  render() {
-    return template.call(this);
-  }
-}
-
-export default HeroImage;
+import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+import {
+    CarouselProvider,
+    Slider,
+    Slide,
+    ButtonBack,
+    ButtonNext,
+    DotGroup,
+} from "pure-react-carousel";
