@@ -15,8 +15,7 @@ const HeroImage = () => {
     const [naturalSlideHeight, setNaturalSlideHeight] = useState(0);
     const [heroImagesArray, setHeroImagesArray] = useState([]);
 
-
-    const heroImagesHD = [{
+    const heroImages = [{
             brand: "supreme",
             link: "https://www.modern-notoriety.com/wp-content/uploads/2019/10/tees.jpg",
         },
@@ -55,31 +54,30 @@ const HeroImage = () => {
         isPlaying = { true }
         interval = { 5000 } >
         <
-        Slider > {
-            heroImagesArray.map((heroImage, ind) => { <
+        Slider > { " " } {
+            heroImagesArray.map((heroImagesHD, ind) => { <
                 Slide key = { ind }
                 index = { ind } >
                     <
                     div className = "selwrapper" >
                     <
-                    img src = { heroImage.link }
-                /> < /
-                div > <
-                    /Slide>;
+                    img src = { heroImagesHD.link }
+                />{" "} <
+                /div>{" "} <
+                /Slide>;
             })
-        } <
-        /Slider> <
+        } { " " } <
+        /Slider>{" "} <
         ButtonBack className = "buttonprevious" >
         <
         i className = "fa fa-angle-left" / >
         <
-        /ButtonBack> <
+        /ButtonBack>{" "} <
         ButtonNext className = "buttonnext" >
         <
-        i className = "fa fa-angle-right"
-        aria - hidden = "true" / >
+        i className = "fa fa-angle-right" / >
         <
-        /ButtonNext> <
+        /ButtonNext>{" "} <
         DotGroup className = "dotgroup" / >
         <
         /CarouselProvider>

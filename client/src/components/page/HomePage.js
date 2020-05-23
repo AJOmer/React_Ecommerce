@@ -1,6 +1,6 @@
 import React, { Fragment, useEffect } from "react";
 
-import HeroImage from "../landingpage/HeroImage";
+import HeroImage from "../landingpage/HeroImage/HeroImage/HeroImage";
 
 const Homepage = () => {
     useEffect(() => {
