@@ -1,0 +1,96 @@
+.wrapper-men-shirt1 {
+    position: relative;
+}
+
+.wrapper-men-shirt1 img {
+    width: 100%;
+    height: 600px;
+    object-fit: contain;
+}
+
+.buttonprevious {
+    position: absolute;
+    top: 50%;
+    left: 2%;
+    height: 30px;
+    width: 24px;
+    background: transparent;
+}
+
+.buttonnext {
+    position: absolute;
+    top: 50%;
+    right: 2%;
+    height: 30px;
+    width: 24px;
+    background: transparent;
+}
+
+.buttonnext:hover,
+.buttonprevious:hover {
+    color: black;
+}
+
+.buttonnext:focus,
+.buttonprevious:focus {
+    outline: 0;
+}
+
+.dotgroup {
+    position: absolute;
+    left: 50%;
+    top: 85%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.dotgroup button {
+    background: rgb(231, 226, 226);
+    height: 5px;
+    width: 80px;
+    border: none;
+    margin: 0px 1px;
+}
+
+.carousel__dot--selected {
+    background-color: rgb(124, 128, 126) !important;
+}
+
+
+/* @media screen and (max-width: 768px) {
+    .wrapper-men-shirt1 img {
+        height: 500px;
+    }
+    .buttonprevious {
+        font-size: 3em;
+        top: 50%;
+        left: 0%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(0%, -50%);
+    }
+    .buttonnext {
+        font-size: 3em;
+        top: 50%;
+        right: 0%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(0%, -50%);
+    }
+    .shoe-hero-button {
+        top: 72%;
+        left: 50%;
+    }
+    .shoe-hero-button button {
+        font-size: 0.9em;
+        height: 40px;
+        vertical-align: middle;
+        text-align: center;
+    }
+    .dotgroup {
+        top: 93%;
+    }
+    .dotgroup button {
+        background: rgb(231, 226, 226);
+        height: 4px;
+        width: 50px;
+    }
+} */

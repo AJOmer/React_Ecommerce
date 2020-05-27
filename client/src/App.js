@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Login from "./components/auth/Login";
 import Register from "./components/auth/Register";
 import setAuthToken from "./utilities/setAuthToken";
-import ShirtsForm from "./components/forms/ShirtsForm";
+// import ShirtsForm from "./components/forms/ShirtsForm";
 import ScrollToTop from "./components/TopScroll/TopScroll";
 import HomePage from "./components/page/HomePage";
 
