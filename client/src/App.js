@@ -7,6 +7,7 @@ import setAuthToken from "./utilities/setAuthToken";
 // import ShirtsForm from "./components/forms/ShirtsForm";
 import ScrollToTop from "./components/TopScroll/TopScroll";
 import HomePage from "./components/landingpage/page/HomePage";
+import Navbar from "./components/pagelayout/Navbar/Navbar";
 
 //Redux
 import { Provider } from "react-redux";
@@ -25,6 +26,8 @@ const App = () => {
         Fragment >
         <
         ScrollToTop / >
+        <
+        Navbar / >
         <
         Route exact path = "/"
         component = { HomePage }
