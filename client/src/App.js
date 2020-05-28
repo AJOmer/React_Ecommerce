@@ -6,7 +6,7 @@ import Register from "./components/auth/Register";
 import setAuthToken from "./utilities/setAuthToken";
 // import ShirtsForm from "./components/forms/ShirtsForm";
 import ScrollToTop from "./components/TopScroll/TopScroll";
-import HomePage from "./components/page/HomePage";
+import HomePage from "./components/landingpage/page/HomePage";
 
 //Redux
 import { Provider } from "react-redux";
