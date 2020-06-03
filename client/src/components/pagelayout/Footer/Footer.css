@@ -1,0 +1,30 @@
+.footer-wrapper {
+    background-color: lightsalmon;
+    color: black;
+    text-align: center;
+    font-size: 15px;
+}
+
+.footer-container {
+    display: flex;
+    padding: 5px;
+    text-align: left;
+}
+
+.footer-connect {
+    width: 30%;
+}
+
+.footer-ourcompany {
+    width: 30%;
+}
+
+.footer-learn {
+    width: 30%;
+}
+
+.connect-subheader {
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+}

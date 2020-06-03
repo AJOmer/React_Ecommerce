@@ -8,6 +8,7 @@ import setAuthToken from "./utilities/setAuthToken";
 import ScrollToTop from "./components/TopScroll/TopScroll";
 import HomePage from "./components/landingpage/page/HomePage";
 import Navbar from "./components/pagelayout/Navbar/Navbar";
+import Footer from "./components/pagelayout/Footer/Footer";
 
 //Redux
 import { Provider } from "react-redux";
@@ -31,7 +32,7 @@ const App = () => {
         <
         Route exact path = "/"
         component = { HomePage }
-        />{" "} <
+        /> <Footer / > { " " } <
         /Fragment>{" "} <
         /Router>{" "} <
         /Provider>
