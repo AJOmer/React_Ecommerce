@@ -28,3 +28,38 @@
     font-weight: 700;
     letter-spacing: 1px;
 }
+
+.footerlist {
+    text-align: left;
+    text-transform: capitalize;
+    list-style-type: none;
+    padding: 0;
+    font-style: italic;
+}
+
+.newsletter-form input[type="text"] {
+    padding: 2px 7px;
+    width: 50%;
+    height: 35px;
+    border-radius: 0px;
+    border: none;
+}
+
+.newsletter-form button {
+    background: red;
+    color: white;
+    border: none;
+    text-transform: capitalize;
+    height: 35px;
+    width: 20%;
+}
+
+.footer-copyright {
+    padding: 1em;
+    font-size: 15px;
+    border-top: 1px solid gray;
+}
+
+.footer-copyright p {
+    margin: 0;
+}
