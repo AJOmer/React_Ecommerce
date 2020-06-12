@@ -4,23 +4,23 @@ import PropTypes from "prop-types";
 
 const Shirt = ({ shirt: { _id, name, brand, images, retail_price } }) => {
     return ( <
-        div className = "grid-latestrelease-column col-6 col-lg-4 col-md-4 col-sm-6" >
+        div className = "grid-latest" >
         <
         Link to = { `/products/shirts/${_id}` } >
         <
-        div className = "shirt_image" >
+        div className = "shirt_images" >
         <
         img src = { images[0] }
         alt = "main_image" / >
         <
-        /div>{" "} <
+        /div> <
         div className = "shirt_info" >
         <
-        p className = "shirt_brand" > { brand } < /p>{" "} <
-        p className = "shirt_name" > { name } < /p>{" "} <
-        p className = "shirt_price" > $ { retail_price } < /p>{" "} <
-        /div>{" "} <
-        /Link>{" "} <
+        p className = "shirt-info-brand" > { brand } < /p> <
+        p className = "shirt-info-name" > { name } < /p> <
+        p className = "shirt-into-price" > $ { retail_price } < /p> <
+        /div> <
+        /Link> <
         /div>
     );
 };
