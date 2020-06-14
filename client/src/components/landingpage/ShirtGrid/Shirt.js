@@ -13,14 +13,14 @@ const Shirt = ({ shirt: { _id, name, brand, images, retail_price } }) => {
         img src = { images[0] }
         alt = "main_image" / >
         <
-        /div> <
+        /div>{" "} <
         div className = "shirt_info" >
         <
-        p className = "shirt-info-brand" > { brand } < /p> <
-        p className = "shirt-info-name" > { name } < /p> <
-        p className = "shirt-into-price" > $ { retail_price } < /p> <
-        /div> <
-        /Link> <
+        p className = "shirt-info-brand" > { brand } < /p>{" "} <
+        p className = "shirt-info-name" > { name } < /p>{" "} <
+        p className = "shirt-into-price" > $ { retail_price } < /p>{" "} <
+        /div>{" "} <
+        /Link>{" "} <
         /div>
     );
 };
