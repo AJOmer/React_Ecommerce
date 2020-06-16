@@ -32,13 +32,13 @@ const Login = ({ login, isAuthenticated }) => {
     return ( <
         div className = "wrapper-login" >
         <
-        h1 > Login < /h1> <
+        h1 > Login < /h1>{" "} <
         form onSubmit = {
             (e) => onSubmit(e) } >
         <
         div className = "form-group" >
         <
-        label htmlFor = "email" > Email < /label> <
+        label htmlFor = "email" > Email < /label>{" "} <
         input className = "form-control"
         type = "email"
         name = "email"
@@ -48,10 +48,10 @@ const Login = ({ login, isAuthenticated }) => {
         required /
         >
         <
-        /div> <
+        /div>{" "} <
         div className = "form-group" >
         <
-        label htmlFor = "password" > Password < /label> <
+        label htmlFor = "password" > Password < /label>{" "} <
         input className = "form-control"
         type = "password"
         name = "password"
@@ -62,7 +62,7 @@ const Login = ({ login, isAuthenticated }) => {
         required /
         >
         <
-        /div> <
+        /div>{" "} <
         div className = "login-button" >
         <
         input type = "submit"
@@ -70,12 +70,12 @@ const Login = ({ login, isAuthenticated }) => {
         value = "Login" /
         >
         <
-        /div> <
-        /form> <
+        /div>{" "} <
+        /form>{" "} <
         p >
         Don 't have an account?{" "} <
-        Link to = "/account/register" > Create an account < /Link> <
-        /p> <
+        Link to = "/account/register" > Create an account < /Link>{" "} <
+        /p>{" "} <
         /div>
     );
 };
