@@ -1,7 +1,7 @@
 import React, { Fragment, useEffect } from "react";
 
 import HeroImage from "../HeroImage/HeroImage/HeroImage";
-import ShirtsGrid from "../ShirtGrid/ShirtsGrid";
+// import ShirtsGrid from "../ShirtGrid/ShirtsGrid";
 
 const Homepage = () => {
     useEffect(() => {
@@ -13,9 +13,7 @@ const Homepage = () => {
         <
         HeroImage / >
         <
-        section className = "container" > { " " } <
-        ShirtsGrid / > { " " } <
-        /section>{" "} <
+        section className = "container" > < /section>{" "} <
         /Fragment>
     );
 };

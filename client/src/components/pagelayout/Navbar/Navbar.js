@@ -12,20 +12,30 @@ const Navbar = (props) => {
         <
         h3 >
         <
-        Link to = "/" > TeeTime < /Link> <
-        /h3> <
-        /div> <
+        Link to = "/" > TeeTime < /Link>{" "} <
+        /h3>{" "} <
+        /div>{" "} <
         ul className = "nav-links" >
         <
         li >
         <
-        Link to = "/products/shirts" > Shop < /Link> <
-        /li> <
+        Link to = "/products/shirts" > Shop < /Link>{" "} <
+        /li>{" "} <
         li >
         <
-        Link to = "/products/shirts" > New Releases < /Link> <
-        /li> <
-        /ul> <
+        Link to = "/products/shirts" > New Releases < /Link>{" "} <
+        /li>{" "} <
+        /ul>{" "} <
+        ul className = "right-nav-links" >
+        <
+        li className = "account-nav-item" >
+        <
+        Link to = "/account/login" >
+        <
+        p className = "accountpage" > Login < /p>{" "} <
+        /Link>{" "} <
+        /li>{" "} <
+        /ul>{" "} <
         /nav>
     );
 };
