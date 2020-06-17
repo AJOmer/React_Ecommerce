@@ -2,14 +2,14 @@ import React, { useState } from "react";
 import { connect } from "react-redux";
 import PropTypes from "prop-types";
 import { Redirect } from "react-router-dom";
-import { addProductShirts } from "../../../actions/shirt";
+import { addShirt } from "../../../actions/shirt";
 
 import "./ShirtsForm.css";
 
 const ShirtsForm = ({
     auth: { isAdmin },
     shirt: { isAddingShirtsSuccessful },
-    addProductShirts,
+    addShirt,
 }) => {
     const [formData, setFormData] = useState({
         brand: "",
@@ -27,92 +27,88 @@ const ShirtsForm = ({
 
     const onSubmit = (e) => {
         e.preventDefault();
-        addProductshirts({ formData });
+        addShirt({ formData });
     };
 
-    if (isAddingshirtsSuccessful) {
+    if (isAddingShirtsSuccessful) {
         return <Redirect to = "/products/shirts" / > ;
     }
 
     return ( <
-        > {
+        > { " " } {
             isAdmin ? ( <
                 div className = "wrapper-shirtsform" >
                 <
-                h1 className = "large text-dark" > add shirts to inventory < /h1>
-
-                <
+                h1 className = "large text-dark" > add shirts to inventory < /h1>{" "} <
                 form onSubmit = {
                     (e) => onSubmit(e) } >
                 <
                 div className = "form-group" >
                 <
-                label htmlFor = "brand" > brand < /label> <
+                label htmlFor = "brand" > brand < /label>{" "} <
                 input className = "form-control"
                 type = "text"
                 name = "brand"
                 value = { brand }
                 onChange = {
                     (e) => onChange(e) }
-                /> <
-                /div> <
+                />{" "} <
+                /div>{" "} <
                 div className = "form-group" >
                 <
-                label htmlFor = "name" > name < /label> <
+                label htmlFor = "name" > name < /label>{" "} <
                 input className = "form-control"
                 type = "text"
                 name = "name"
                 value = { name }
                 onChange = {
                     (e) => onChange(e) }
-                /> <
-                /div> <
+                />{" "} <
+                /div>{" "} <
                 div className = "form-group" >
                 <
-                label htmlFor = "retail_price" > retail price < /label> <
+                label htmlFor = "retail_price" > retail price < /label>{" "} <
                 input className = "form-control"
                 type = "text"
                 name = "retail_price"
                 value = { retail_price }
                 onChange = {
                     (e) => onChange(e) }
-                /> <
-                /div> <
+                />{" "} <
+                /div>{" "} <
                 div className = "form-group" >
                 <
-                label htmlFor = "description" > description < /label> <
+                label htmlFor = "description" > description < /label>{" "} <
                 input className = "form-control"
                 type = "text"
                 name = "description"
                 value = { description }
                 onChange = {
                     (e) => onChange(e) }
-                /> <
-                /div> <
+                />{" "} <
+                /div>{" "} <
                 div className = "form-group" >
                 <
-                label htmlFor = "colors" > colors < /label> <
+                label htmlFor = "colors" > colors < /label>{" "} <
                 input className = "form-control"
                 type = "text"
                 name = "colors"
                 value = { colors }
                 onChange = {
                     (e) => onChange(e) }
-                /> <
-                /div> <
+                />{" "} <
+                /div>{" "} <
                 div className = "form-group" >
                 <
-                label htmlFor = "images" > images < /label> <
+                label htmlFor = "images" > images < /label>{" "} <
                 textarea className = "form-control"
                 rows = "3"
                 name = "images"
                 value = { images }
                 onChange = {
                     (e) => onChange(e) }
-                /> <
-                /div>
-
-                <
+                />{" "} <
+                /div>{" "} <
                 div className = "add-shirts-button" >
                 <
                 input type = "submit"
@@ -120,18 +116,18 @@ const ShirtsForm = ({
                 value = "add shirts to inventory" /
                 >
                 <
-                /div> <
-                /form> <
+                /div>{" "} <
+                /form>{" "} <
                 /div>
             ) : null
-        } <
+        } { " " } <
         />
     );
 };
 
 ShirtsForm.propTypes = {
     auth: PropTypes.object.isRequired,
-    addProductShirts: PropTypes.func.isRequired,
+    addShirt: PropTypes.func.isRequired,
     shirt: PropTypes.object.isRequired,
 };
 
@@ -140,4 +136,4 @@ const mapStateToProps = (state) => ({
     shirt: state.shirt,
 });
 
-export default connect(mapStateToProps, { addProductShirts })(ShirtsForm);
+export default connect(mapStateToProps, { addShirt })(ShirtsForm);

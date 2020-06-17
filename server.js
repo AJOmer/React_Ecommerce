@@ -1,16 +1,19 @@
 const express = require("express");
-const dbConnect = require("./config/db");
+const connectDB = require("./config/db");
 const path = require("path");
 
 const app = express();
 
 //Connecting to the DB \\
-dbConnect();
+connectDB();
 
 // Middleware Init\\
 app.use(express.json({ extended: false }));
 
 // Routes \\
+app.use("/api/users", require("./routes/users"));
+app.use("/api/auth", require("./routes/auth"));
+app.use("/api/shirts", require("./routes/shirts"));
 
 // Static assets if in production (deployment purposes) \\
 if (process.env.NODE_ENV === "production") {

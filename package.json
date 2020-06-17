@@ -8,11 +8,10 @@
         "npm": "6.9.0"
     },
     "scripts": {
-        "start": "node server/index.js",
-        "server": "nodemon server.js --ignore './client/'",
-        "backend": "nodemon server/index.js",
-        "frontend": "npm run start --prefix client",
-        "dev": "concurrently \"npm run backend\" \"npm run start --prefix client\""
+        "start": "node server",
+        "server": "nodemon server.js",
+        "client": "npm start --prefix client",
+        "dev": "concurrently \"npm run server\" \"npm run client\""
     },
     "author": "Ahmed Omer",
     "license": "ISC",
@@ -22,11 +21,13 @@
         "bcrypt": "^3.0.6",
         "bcryptjs": "^2.4.3",
         "body-parser": "^1.18.3",
+        "config": "^3.3.1",
+        "connect": "^3.7.0",
         "cookie-parser": "^1.4.3",
         "cors": "^2.8.5",
         "debug": "^4.1.1",
         "express": "^4.17.1",
-        "express-validator": "^6.4.1",
+        "express-validator": "^6.5.0",
         "http-proxy-middleware": "^1.0.4",
         "http-status-codes": "^1.4.0",
         "jsonwebtoken": "^8.5.1",
@@ -44,7 +45,7 @@
         "uuid": "^8.0.0"
     },
     "devDependencies": {
-        "concurrently": "^4.1.0",
+        "concurrently": "^4.1.2",
         "nodemon": "^1.19.1"
     }
 }

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Redirect } from "react-router-dom";
 
-import "./AddAddressForm.css";
+import "./AddressForm.css";
 
 const AddAddressForm = (props) => {
     const { addAddress, onClickToggle } = props;
@@ -36,14 +36,14 @@ const AddAddressForm = (props) => {
     return ( <
         div className = "wrapper-addressform" >
         <
-        h3 > add address < /h3> <
+        h3 > add address < /h3>{" "} <
         form className = "addressform"
         onSubmit = {
             (e) => onSubmit(e) } >
         <
         div className = "form-group" >
         <
-        label htmlFor = "street" > street address * < /label> <
+        label htmlFor = "street" > street address * < /label>{" "} <
         input className = "form-control"
         type = "text"
         name = "street"
@@ -53,10 +53,10 @@ const AddAddressForm = (props) => {
         required /
         >
         <
-        /div> <
+        /div>{" "} <
         div class = "form-group" >
         <
-        label htmlFor = "country" > country or region * < /label> <
+        label htmlFor = "country" > country or region * < /label>{" "} <
         select className = "form-control"
         name = "country"
         value = { country }
@@ -66,13 +66,13 @@ const AddAddressForm = (props) => {
         <
         option value = "United States"
         selected >
-        United States <
-        /option> <
-        /select> <
-        /div> <
+        United States { " " } <
+        /option>{" "} <
+        /select>{" "} <
+        /div>{" "} <
         div className = "form-group" >
         <
-        label htmlFor = "city" > city * < /label> <
+        label htmlFor = "city" > city * < /label>{" "} <
         input className = "form-control"
         type = "text"
         name = "city"
@@ -82,10 +82,10 @@ const AddAddressForm = (props) => {
         required /
         >
         <
-        /div> <
+        /div>{" "} <
         div class = "form-group" >
         <
-        label htmlFor = "state" > state / province * < /label> <
+        label htmlFor = "state" > state / province * < /label>{" "} <
         select className = "form-control"
         name = "state"
         value = { state }
@@ -95,64 +95,64 @@ const AddAddressForm = (props) => {
         <
         option value = ""
         selected >
-        Select state or region <
-        /option> <
-        option value = "AL" > Alabama < /option> <
-        option value = "AK" > Alaska < /option> <
-        option value = "AZ" > Arizona < /option> <
-        option value = "AR" > Arkansas < /option> <
-        option value = "CA" > California < /option> <
-        option value = "CO" > Colorado < /option> <
-        option value = "CT" > Connecticut < /option> <
-        option value = "DE" > Delaware < /option> <
-        option value = "DC" > District Of Columbia < /option> <
-        option value = "FL" > Florida < /option> <
-        option value = "GA" > Georgia < /option> <
-        option value = "HI" > Hawaii < /option> <
-        option value = "ID" > Idaho < /option> <
-        option value = "IL" > Illinois < /option> <
-        option value = "IN" > Indiana < /option> <
-        option value = "IA" > Iowa < /option> <
-        option value = "KS" > Kansas < /option> <
-        option value = "KY" > Kentucky < /option> <
-        option value = "LA" > Louisiana < /option> <
-        option value = "ME" > Maine < /option> <
-        option value = "MD" > Maryland < /option> <
-        option value = "MA" > Massachusetts < /option> <
-        option value = "MI" > Michigan < /option> <
-        option value = "MN" > Minnesota < /option> <
-        option value = "MS" > Mississippi < /option> <
-        option value = "MO" > Missouri < /option> <
-        option value = "MT" > Montana < /option> <
-        option value = "NE" > Nebraska < /option> <
-        option value = "NV" > Nevada < /option> <
-        option value = "NH" > New Hampshire < /option> <
-        option value = "NJ" > New Jersey < /option> <
-        option value = "NM" > New Mexico < /option> <
-        option value = "NY" > New York < /option> <
-        option value = "NC" > North Carolina < /option> <
-        option value = "ND" > North Dakota < /option> <
-        option value = "OH" > Ohio < /option> <
-        option value = "OK" > Oklahoma < /option> <
-        option value = "OR" > Oregon < /option> <
-        option value = "PA" > Pennsylvania < /option> <
-        option value = "RI" > Rhode Island < /option> <
-        option value = "SC" > South Carolina < /option> <
-        option value = "SD" > South Dakota < /option> <
-        option value = "TN" > Tennessee < /option> <
-        option value = "TX" > Texas < /option> <
-        option value = "UT" > Utah < /option> <
-        option value = "VT" > Vermont < /option> <
-        option value = "VA" > Virginia < /option> <
-        option value = "WA" > Washington < /option> <
-        option value = "WV" > West Virginia < /option> <
-        option value = "WI" > Wisconsin < /option> <
-        option value = "WY" > Wyoming < /option> <
-        /select> <
-        /div> <
+        Select state or region { " " } <
+        /option>{" "} <
+        option value = "AL" > Alabama < /option>{" "} <
+        option value = "AK" > Alaska < /option>{" "} <
+        option value = "AZ" > Arizona < /option>{" "} <
+        option value = "AR" > Arkansas < /option>{" "} <
+        option value = "CA" > California < /option>{" "} <
+        option value = "CO" > Colorado < /option>{" "} <
+        option value = "CT" > Connecticut < /option>{" "} <
+        option value = "DE" > Delaware < /option>{" "} <
+        option value = "DC" > District Of Columbia < /option>{" "} <
+        option value = "FL" > Florida < /option>{" "} <
+        option value = "GA" > Georgia < /option>{" "} <
+        option value = "HI" > Hawaii < /option>{" "} <
+        option value = "ID" > Idaho < /option>{" "} <
+        option value = "IL" > Illinois < /option>{" "} <
+        option value = "IN" > Indiana < /option>{" "} <
+        option value = "IA" > Iowa < /option>{" "} <
+        option value = "KS" > Kansas < /option>{" "} <
+        option value = "KY" > Kentucky < /option>{" "} <
+        option value = "LA" > Louisiana < /option>{" "} <
+        option value = "ME" > Maine < /option>{" "} <
+        option value = "MD" > Maryland < /option>{" "} <
+        option value = "MA" > Massachusetts < /option>{" "} <
+        option value = "MI" > Michigan < /option>{" "} <
+        option value = "MN" > Minnesota < /option>{" "} <
+        option value = "MS" > Mississippi < /option>{" "} <
+        option value = "MO" > Missouri < /option>{" "} <
+        option value = "MT" > Montana < /option>{" "} <
+        option value = "NE" > Nebraska < /option>{" "} <
+        option value = "NV" > Nevada < /option>{" "} <
+        option value = "NH" > New Hampshire < /option>{" "} <
+        option value = "NJ" > New Jersey < /option>{" "} <
+        option value = "NM" > New Mexico < /option>{" "} <
+        option value = "NY" > New York < /option>{" "} <
+        option value = "NC" > North Carolina < /option>{" "} <
+        option value = "ND" > North Dakota < /option>{" "} <
+        option value = "OH" > Ohio < /option>{" "} <
+        option value = "OK" > Oklahoma < /option>{" "} <
+        option value = "OR" > Oregon < /option>{" "} <
+        option value = "PA" > Pennsylvania < /option>{" "} <
+        option value = "RI" > Rhode Island < /option>{" "} <
+        option value = "SC" > South Carolina < /option>{" "} <
+        option value = "SD" > South Dakota < /option>{" "} <
+        option value = "TN" > Tennessee < /option>{" "} <
+        option value = "TX" > Texas < /option>{" "} <
+        option value = "UT" > Utah < /option>{" "} <
+        option value = "VT" > Vermont < /option>{" "} <
+        option value = "VA" > Virginia < /option>{" "} <
+        option value = "WA" > Washington < /option>{" "} <
+        option value = "WV" > West Virginia < /option>{" "} <
+        option value = "WI" > Wisconsin < /option>{" "} <
+        option value = "WY" > Wyoming < /option>{" "} <
+        /select>{" "} <
+        /div>{" "} <
         div className = "form-group" >
         <
-        label htmlFor = "zipcode" > zip / postal code * < /label> <
+        label htmlFor = "zipcode" > zip / postal code * < /label>{" "} <
         input className = "form-control"
         type = "text"
         name = "zipcode"
@@ -162,15 +162,13 @@ const AddAddressForm = (props) => {
         required /
         >
         <
-        /div>
-
-        <
+        /div> <
         input type = "submit"
         className = "btn btn-success btn-sm addressform-button"
         value = "Add Address" /
         >
         <
-        /form> <
+        /form>{" "} <
         /div>
     );
 };
