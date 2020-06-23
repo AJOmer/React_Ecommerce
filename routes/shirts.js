@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const { check, validationResult } = require("express-validator/check");
+const { check, validationResult } = require("express-validator");
 const config = require("config");
 const auth = require("../middleware/auth");
 
@@ -14,6 +14,7 @@ router.get("/", async(req, res) => {
     try {
         // once the shirt collection is populated, try dis
         const allShirts = await Shirts.find();
+        console.log("shirts route working");
         res.json(allShirts);
     } catch (err) {
         console.error(err.message);
@@ -49,6 +50,8 @@ router.post(
             check("name", "Name is required").not().isEmpty(),
             check("brand", "Brand Required").not().isEmpty(),
             check("retail_price", "Retail price is required").not().isEmpty(),
+            check("description", "Description Needed").not().isEmpty(),
+            check("colors", "Color description").not().isEmpty(),
         ],
     ],
     async(req, res) => {
@@ -79,16 +82,20 @@ router.post(
                 let shirt = await Shirts.findOne({ name });
 
                 if (shirt) {
+                    console.log("Exists already");
                     return res.status(400).json({ errors: [{ msg: "Already exists" }] });
                 }
                 let newShirts = new Shirts(shirtsField);
                 await newShirts.save();
+                console.log("New Shirt added");
                 res.json({ msg: "Successfully added new Shirt" });
             } else {
+                console.log("not admin");
                 return res.status(400).json({ msg: "Not the admin, cannot delete" });
             }
         } catch (err) {
             console.error(err.message);
+            console.log("Problem posting this bucko");
             res.status(500).send("Server Error");
         }
     }
@@ -105,7 +112,8 @@ router.delete("/:shirts_id", auth, async(req, res) => {
         if (isUserAdmin) {
             // remove shirts
             await Shirts.findByIdAndRemove({ _id: req.params.shirts_id });
-            res.json({ msg: "Shoes are removed" });
+            console.log("By Shirt");
+            res.json({ msg: "Shirt is removed" });
         } else {
             res.status(400).json({ msg: "Not admin, cannot delete" });
         }

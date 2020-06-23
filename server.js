@@ -16,14 +16,14 @@ app.use("/api/auth", require("./routes/auth"));
 app.use("/api/shirts", require("./routes/shirts"));
 
 // Static assets if in production (deployment purposes) \\
-if (process.env.NODE_ENV === "production") {
-    // Set static folder \\
-    app.use(express.static("client/build"));
+// if (process.env.NODE_ENV === "production") {
+//     // Set static folder \\
+//     app.use(express.static("client/build"));
 
-    app.get("*", (req, res) => {
-        res.sendfile(path.join(__dirname, "client", "build", "index.html"));
-    });
-}
+//     app.get("*", (req, res) => {
+//         res.sendfile(path.join(__dirname, "client", "build", "index.html"));
+//     });
+// }
 
 const PORT = process.env.PORT || 5000;
 

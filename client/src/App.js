@@ -43,7 +43,7 @@ const App = () => {
         />{" "} <
         section className = "container" >
         <
-        switch >
+        Switch >
         <
         Route exact path = "/account/login"
         component = { Login }
@@ -57,7 +57,7 @@ const App = () => {
         AdminRoute exact path = "/products/add/shirts"
         component = { ShirtsForm }
         />{" "} <
-        /switch>{" "} <
+        /Switch>{" "} <
         /section>{" "} <
         Footer / > { " " } <
         /Fragment>{" "} <

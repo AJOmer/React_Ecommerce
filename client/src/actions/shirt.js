@@ -71,7 +71,7 @@ export const addShirt = ({ formData }) => async(dispatch) => {
     };
 
     try {
-        const res = await axios.post("api/shirts", formData, config);
+        const res = await axios.post("/api/shirts", formData, config);
 
         dispatch({
             type: ADD_PRODUCT_SHIRTS_SUCCESS,

@@ -54,7 +54,7 @@ const EditAddressForm = (props) => {
         >
         <
         /div>{" "} <
-        div class = "form-group" >
+        div className = "form-group" >
         <
         label htmlFor = "country" > country or region * < /label>{" "} <
         select className = "form-control"
@@ -65,7 +65,7 @@ const EditAddressForm = (props) => {
         required >
         <
         option value = "United States"
-        selected >
+        defaultValue >
         United States { " " } <
         /option>{" "} <
         /select>{" "} <
@@ -83,7 +83,7 @@ const EditAddressForm = (props) => {
         >
         <
         /div>{" "} <
-        div class = "form-group" >
+        div className = "form-group" >
         <
         label htmlFor = "state" > state / province * < /label>{" "} <
         select className = "form-control"
@@ -94,7 +94,7 @@ const EditAddressForm = (props) => {
         required >
         <
         option value = ""
-        selected >
+        defaultValue >
         Select state or region { " " } <
         /option>{" "} <
         option value = "AL" > Alabama < /option>{" "} <

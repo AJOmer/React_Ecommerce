@@ -14,12 +14,13 @@ const ShirtsForm = ({
     const [formData, setFormData] = useState({
         brand: "",
         name: "",
+        retail_price: "",
         description: "",
         colors: "",
         images: "",
     });
 
-    const { brand, name, retail_price, colors, description, images } = formData;
+    const { brand, name, retail_price, description, colors, images } = formData;
 
     // Changes the value of the target every keystroke
     const onChange = (e) =>
