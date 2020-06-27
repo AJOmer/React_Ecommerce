@@ -2,25 +2,29 @@ import React from "react";
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 
-const Shirt = ({ shirt: { _id, name, brand, images, retail_price } }) => {
+import "./ShirtsGrid.css";
+
+const Shirt = ({
+    shirt: { _id, name, brand, images, description, retail_price },
+}) => {
     return ( <
-        div className = "grid-latest" >
+        div className = "grid-latestrelease-column col-6 col-lg-4 col-md-4 col-sm-6" >
         <
-        Link to = { `/products/shirts/${_id}` } >
+        Link to = { `/products/shirts/${_id}` }
+        /> <
+        div className = "shirt_image" >
         <
-        div className = "shirt_images" >
+        img alt = "My Shirts"
+        src = { images[0] }
+        /> <
+        /div> <
+        div className = "shirt_specs" >
         <
-        img src = { images[0] }
-        alt = "main_image" / >
-        <
+        p className = "shirt_specs_brand" > { brand } < /p>{" "} <
+        p className = "shirt_specs_name" > { name } < /p>{" "} <
+        p className = "shirt_specs_description" > { description } < /p>{" "} <
+        p className = "shirt_specs_price" > { retail_price } < /p>{" "} <
         /div>{" "} <
-        div className = "shirt_info" >
-        <
-        p className = "shirt-info-brand" > { brand } < /p>{" "} <
-        p className = "shirt-info-name" > { name } < /p>{" "} <
-        p className = "shirt-into-price" > $ { retail_price } < /p>{" "} <
-        /div>{" "} <
-        /Link>{" "} <
         /div>
     );
 };

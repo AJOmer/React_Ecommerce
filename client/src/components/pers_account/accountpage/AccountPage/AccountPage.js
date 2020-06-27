@@ -26,7 +26,7 @@ const AccountPage = ({
         div className = "accountpage-header" >
         <
         h2 > My Account Management < /h2>{" "} <
-        div className = "accountpage-header-butons" > { " " } {
+        div className = "accountpage-header-buttons" > { " " } {
             isAdmin && ( <
                 >
                 <

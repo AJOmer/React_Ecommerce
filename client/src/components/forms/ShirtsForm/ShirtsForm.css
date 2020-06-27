@@ -1,0 +1,34 @@
+.wrapper-shirtsform {
+    width: 95%;
+    margin: 2px;
+    text-align: center;
+    font-style: italic;
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.wrapper-shirtsform h1 {
+    text-transform: uppercase;
+    text-decoration: line-through;
+    font-size: 25px;
+}
+
+.wrapper-shirtsform form .form-group input,
+.wrapper-shirtsform form .form-group textarea {
+    margin: 0 auto;
+}
+
+.wrapper-shirtsform form .form-group label {
+    width: 75%;
+    text-align: left;
+    text-transform: capitalize;
+}
+
+.wrapper-shirtsform form .add-shirts-button {
+    width: 80%;
+    margin: 1.5em auto;
+}
+
+.wrapper-shirtsform form .add-shirts-button input {
+    text-transform: capitalize;
+    letter-spacing: 0.5px;
+}

@@ -4,6 +4,9 @@ import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 import { getShirts } from "../../../actions/shirt";
 import Shirt from "./Shirt";
+import Loading from "../../pagelayout/Loading/Loading";
+
+import "./ShirtsGrid.css";
 
 const ShirtsGrid = ({ getShirts, shirts, loadingShirts }) => {
     useEffect(() => {
@@ -22,7 +25,7 @@ const ShirtsGrid = ({ getShirts, shirts, loadingShirts }) => {
                 <
                 div className = "row" > { " " } {
                     shirts.slice(0, 12).map((shirt) => ( <
-                        Shirt key = "shirt._id"
+                        Shirt key = { shirt._id }
                         shirt = { shirt }
                         />
                     ))
@@ -34,7 +37,7 @@ const ShirtsGrid = ({ getShirts, shirts, loadingShirts }) => {
                 /Link>{" "} <
                 /div>
             ) : ( <
-                Shirt / >
+                Loading / >
             )
         } { " " } <
         /div>

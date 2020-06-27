@@ -52,6 +52,7 @@ router.post(
             check("retail_price", "Retail price is required").not().isEmpty(),
             check("description", "Description Needed").not().isEmpty(),
             check("colors", "Color description").not().isEmpty(),
+            check("images", "Need to upload shirt Image").not().isEmpty(),
         ],
     ],
     async(req, res) => {
@@ -72,7 +73,7 @@ router.post(
             shirtsField.colors = colors.split(",").map((color) => color.trim());
         }
         if (images) {
-            shirtsField.images - images.split(",").map((image) => image.trim());
+            shirtsField.images = images.split(",").map((image) => image.trim());
         }
 
         try {
@@ -88,6 +89,7 @@ router.post(
                 let newShirts = new Shirts(shirtsField);
                 await newShirts.save();
                 console.log("New Shirt added");
+                console.log(shirtsField.images);
                 res.json({ msg: "Successfully added new Shirt" });
             } else {
                 console.log("not admin");
