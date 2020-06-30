@@ -14,7 +14,7 @@ router.get("/", async(req, res) => {
     try {
         // once the shirt collection is populated, try dis
         const allShirts = await Shirts.find();
-        console.log("shirts route working");
+        // console.log("shirts route working");
         res.json(allShirts);
     } catch (err) {
         console.error(err.message);
@@ -30,12 +30,14 @@ router.get("/:shirts_id", async(req, res) => {
         let selectedShirt = await Shirts.findById(req.params.shirts_id);
 
         if (!selectedShirt) {
+            console.log("Shirt not found");
             return res.status(400).json({ msg: "Shirt not found, invalid ID" });
         }
         res.json(selectedShirt);
     } catch (err) {
         if (err.kind == "ObjectId") {
-            return res.status(400).json({ msg: "Shoe not found" });
+            console.log("problem fetching shirt");
+            return res.status(400).json({ msg: "Shirt not found" });
         }
         res.status(500).send("Server Error");
     }
@@ -114,7 +116,7 @@ router.delete("/:shirts_id", auth, async(req, res) => {
         if (isUserAdmin) {
             // remove shirts
             await Shirts.findByIdAndRemove({ _id: req.params.shirts_id });
-            console.log("By Shirt");
+            console.log("Bye Shirt");
             res.json({ msg: "Shirt is removed" });
         } else {
             res.status(400).json({ msg: "Not admin, cannot delete" });

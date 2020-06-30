@@ -12,7 +12,7 @@ import Navbar from "./components/pagelayout/Navbar/Navbar";
 import Footer from "./components/pagelayout/Footer/Footer";
 import AdminRoute from "./components/routing/AdminRoute";
 import PrivateRoute from "./components/routing/PrivateRoute";
-import ShirtsGrid from "./components/landingpage/ShirtGrid/ShirtsGrid";
+import ShirtDetails from "./components/shirtdetails/layout/PageLayout";
 
 //Redux
 import { Provider } from "react-redux";
@@ -46,9 +46,9 @@ const App = () => {
         <
         Switch >
         <
-        Route exact path = "/products/shirts"
-        component = { ShirtsGrid }
-        /> <
+        Route exact path = "/products/shirts/:id"
+        component = { ShirtDetails }
+        />{" "} <
         Route exact path = "/account/login"
         component = { Login }
         />{" "} <

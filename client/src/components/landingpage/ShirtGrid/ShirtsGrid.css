@@ -29,13 +29,13 @@
     opacity: 1;
 }
 
-.shirt-graphics {
+.shirt_image {
     margin-bottom: 1px;
     text-align: center;
 }
 
-.shirt-graphics img {
-    width: 80%;
+.shirt_image img {
+    width: 70%;
 }
 
 .shirt_specs {

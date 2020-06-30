@@ -32,7 +32,7 @@ const ShirtsForm = ({
     };
 
     if (isAddingShirtsSuccessful) {
-        return <Redirect to = "/products/shirts" / > ;
+        return <Redirect to = "/" / > ;
     }
 
     return ( <
