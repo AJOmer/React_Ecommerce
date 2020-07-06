@@ -1,0 +1,34 @@
+.image-wrapper {
+    display: inline-block;
+    margin-top: 15px;
+    width: 61%;
+    padding: 10px;
+}
+
+.mainrow img {
+    width: 97%;
+}
+
+.alt-images {
+    margin: 20px;
+}
+
+
+/* .second-row {
+    padding: 10px;
+} */
+
+.alternativepics {
+    padding: 10px;
+    columns: 2;
+    display: inline-block;
+    width: 35%;
+}
+
+.alternativepics:hover {
+    opacity: 0.3;
+}
+
+.alternativepics img {
+    width: 97%;
+}

@@ -39,9 +39,10 @@
 .dotgroup {
     position: absolute;
     left: 50%;
-    top: 85%;
+    top: 100%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+    background: transparent;
 }
 
 .dotgroup button {
@@ -55,42 +56,3 @@
 .carousel__dot--selected {
     background-color: rgb(124, 128, 126) !important;
 }
-
-
-/* @media screen and (max-width: 768px) {
-    .wrapper-men-shirt1 img {
-        height: 500px;
-    }
-    .buttonprevious {
-        font-size: 3em;
-        top: 50%;
-        left: 0%;
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(0%, -50%);
-    }
-    .buttonnext {
-        font-size: 3em;
-        top: 50%;
-        right: 0%;
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(0%, -50%);
-    }
-    .shoe-hero-button {
-        top: 72%;
-        left: 50%;
-    }
-    .shoe-hero-button button {
-        font-size: 0.9em;
-        height: 40px;
-        vertical-align: middle;
-        text-align: center;
-    }
-    .dotgroup {
-        top: 93%;
-    }
-    .dotgroup button {
-        background: rgb(231, 226, 226);
-        height: 4px;
-        width: 50px;
-    }
-} */

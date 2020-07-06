@@ -1,5 +1,5 @@
 .recent_releases {
-    margin: 2px;
+    margin: 2em 0em 1em 0em;
 }
 
 .recent_release_header {
@@ -11,22 +11,19 @@
     font-weight: bold;
 }
 
-.grid_release {
-    margin-top: -15px;
+.grid-latestrelease {
+    column-count: 3;
+    margin-top: 15px;
     text-align: center;
-    border-bottom: 1px solid black;
 }
 
 .grid-latestrelease-column {
-    margin: 1px;
-}
-
-.grid-latestrelease-column a {
-    text-decoration: none;
+    column-count: 3;
+    margin: 0.5em;
 }
 
 .grid-latestrelease-column:hover {
-    opacity: 1;
+    opacity: 0.3;
 }
 
 .shirt_image {
@@ -35,7 +32,7 @@
 }
 
 .shirt_image img {
-    width: 70%;
+    width: 90%;
 }
 
 .shirt_specs {
@@ -59,10 +56,15 @@
 
 .shirt_specs_description {
     margin-top: -8px;
-    text-transform: lowercase;
+    text-transform: capitalize;
 }
 
 .shirt_specs_price {
     margin-top: -3px;
     font-weight: 500;
+}
+
+.grid-latestrelease-column a {
+    text-decoration: none;
+    color: black;
 }

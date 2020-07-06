@@ -4,9 +4,7 @@ import PropTypes from "prop-types";
 
 import "./ShirtsGrid.css";
 
-const Shirt = ({
-    shirt: { _id, name, brand, images, description, retail_price },
-}) => {
+const Shirt = ({ shirt: { _id, name, brand, images, retail_price } }) => {
     return ( <
         div className = "grid-latestrelease-column " >
         <
@@ -21,8 +19,7 @@ const Shirt = ({
         <
         p className = "shirt_specs_brand" > { brand } < /p>{" "} <
         p className = "shirt_specs_name" > { name } < /p>{" "} <
-        p className = "shirt_specs_description" > { description } < /p>{" "} <
-        p className = "shirt_specs_price" > { retail_price } < /p>{" "} <
+        p className = "shirt_specs_price" > $ { retail_price } < /p>{" "} <
         /div>{" "} <
         /Link>{" "} <
         /div>

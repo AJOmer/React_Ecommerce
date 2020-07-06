@@ -11,6 +11,7 @@ import {
 } from "../../../actions/shirt";
 
 import ShirtDetails from "../details/ShirtDetails";
+import Images from "../images/Images";
 
 const PageLayout = ({
     getShirt,
@@ -20,7 +21,7 @@ const PageLayout = ({
     match: {
         params: { id },
     },
-    shirt: { selectedShirt, shirts, deleteShirt, error },
+    shirt: { selectedShirt, shirts, deletingShirts, error },
     auth: { isAdmin },
 }) => {
     useEffect(() => {
@@ -33,8 +34,8 @@ const PageLayout = ({
         getShirt(id);
     };
 
-    if (deleteShirts) {
-        return <Redirect to = { "/products/shirts" }
+    if (deletingShirts) {
+        return <Redirect to = { "/" }
         />;
     }
 
@@ -47,7 +48,17 @@ const PageLayout = ({
         ) : ( <
             Loading / >
         )
-    ) : null;
+    ) : ( <
+        Fragment >
+        <
+        Images images = { selectedShirt.images }
+        /> <
+        ShirtDetails selectedShirt = { selectedShirt }
+        isAdmin = { isAdmin }
+        deleteShirts = { deleteShirts }
+        />{" "} <
+        /Fragment>
+    );
 };
 
 const mapStateToProps = (state) => ({
@@ -55,7 +66,7 @@ const mapStateToProps = (state) => ({
     auth: state.auth,
 });
 
-PageLayout.PropTypes = {
+PageLayout.propTypes = {
     getShirt: PropTypes.func,
     getShirts: PropTypes.func,
     clearSelectedShirt: PropTypes.func,

@@ -1,17 +1,19 @@
 import React, { useState } from "react";
-import { Link, withRouter } from "react-router-dom";
+import { withRouter } from "react-router-dom";
+
+import "./ShirtDetails.css";
 
 const ShirtDetails = (props) => {
     const {
         _id,
         brand,
         name,
-        description,
         images,
+        description,
         retail_price,
     } = props.selectedShirt;
 
-    const { deleteShirt } = props;
+    const { deleteShirts } = props;
 
     return ( <
         div className = "details-wrapper" >
@@ -20,16 +22,17 @@ const ShirtDetails = (props) => {
         <
         h1 className = "shirt-info-brand" > { brand } < /h1>{" "} <
         p className = "shirt-info-name" > { name } < /p>{" "} <
-        p className = "shirt-info-price" > { " " }
-        retail price: < span > $ { retail_price } < /span> <
-        /p> <
+        p className = "shirt-info-price" > { " " } <
+        p className = "shirt-info-desc" > { description } < /p> retail price:{" "} <
+        span className = "thisspan" > $ { retail_price } < /span>{" "} <
+        /p>{" "} <
         /div>{" "} {
             props.isAdmin ? ( <
                 >
                 <
                 button className = "shirtinfo-button btn btn-danger btn-block btn-sm"
                 onClick = {
-                    () => deleteShirt(_id) } >
+                    () => deleteShirts(_id) } >
                 Delete Shirt { " " } <
                 /button>{" "} <
                 />

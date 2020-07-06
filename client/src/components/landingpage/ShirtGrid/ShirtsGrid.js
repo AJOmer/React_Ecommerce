@@ -21,7 +21,7 @@ const ShirtsGrid = ({ getShirts, shirts, loadingShirts }) => {
         p > Latest Drops < /p>{" "} <
         /div>{" "} {
             shirts.length > 0 ? ( <
-                div className = "grid_release" >
+                div className = "grid-latestrelease" >
                 <
                 div className = "row" > { " " } {
                     shirts.slice(0, 12).map((shirt) => ( <
@@ -33,7 +33,9 @@ const ShirtsGrid = ({ getShirts, shirts, loadingShirts }) => {
                 /div>{" "} <
                 Link to = "/products/shirts" >
                 <
-                button > See Shirt Collection < /button>{" "} <
+                button className = "btn btn-outline-dark" > { " " }
+                See Shirt Collection { " " } <
+                /button>{" "} <
                 /Link>{" "} <
                 /div>
             ) : ( <

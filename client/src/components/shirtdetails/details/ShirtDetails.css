@@ -1,0 +1,34 @@
+.details-wrapper {
+    display: inline-block;
+    vertical-align: top;
+    text-transform: uppercase;
+    width: 35%;
+    padding: 20px;
+    font-family: "Montserrat Subrayada, sans-serif";
+}
+
+.shirt-info {
+    letter-spacing: 2px;
+}
+
+.shirt-info-brand {
+    text-decoration: underline overline;
+}
+
+.shirt-info-name {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 23px;
+}
+
+.shirt-info-price {
+    font-size: 19px;
+}
+
+.shirt-info-desc {
+    font-size: 15px;
+}
+
+.thisspan {
+    font-weight: bolder;
+}
