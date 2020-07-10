@@ -13,6 +13,7 @@ import Footer from "./components/pagelayout/Footer/Footer";
 import AdminRoute from "./components/routing/AdminRoute";
 import PrivateRoute from "./components/routing/PrivateRoute";
 import PageLayout from "./components/shirtdetails/layout/PageLayout";
+import ShirtCollection from "./components/shirtcollection/collection/ShirtCollection";
 
 //Redux
 import { Provider } from "react-redux";
@@ -46,6 +47,9 @@ const App = () => {
         <
         Switch >
         <
+        Route exact path = "/products/shirts"
+        component = { ShirtCollection }
+        /> <
         Route exact path = "/products/shirts/:id"
         component = { PageLayout }
         />{" "} <
