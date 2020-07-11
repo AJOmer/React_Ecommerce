@@ -15,27 +15,22 @@ const Navbar = (props) => {
         Link to = "/" > TeeTime < /Link>{" "} <
         /h3>{" "} <
         /div>{" "} <
-        ul className = "nav-links" >
+        div id = "mySidenav"
+        class = "sidenav" >
         <
-        li >
-        <
-        Link to = "/products/shirts" > Shop < /Link>{" "} <
-        /li>{" "} <
-        li >
-        <
-        Link to = "/products/shirts" > New Releases < /Link>{" "} <
-        /li>{" "} <
-        /ul>{" "} <
-        ul className = "right-nav-links" >
-        <
-        li className = "account-nav-item" >
-        <
-        Link to = "/account/login" >
-        <
-        p className = "accountpage" > Login < /p>{" "} <
+        Link id = "about"
+        to = "/products/shirts" >
+        Shop { " " } <
         /Link>{" "} <
-        /li>{" "} <
-        /ul>{" "} <
+        Link id = "home"
+        to = "/" >
+        Home { " " } <
+        /Link>{" "} <
+        Link id = "login"
+        to = "/account/login" >
+        Login { " " } <
+        /Link>{" "} <
+        /div>{" "} <
         /nav>
     );
 };

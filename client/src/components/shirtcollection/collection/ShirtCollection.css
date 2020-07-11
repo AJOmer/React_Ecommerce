@@ -1,0 +1,73 @@
+.row {
+    width: 95%;
+}
+
+.recent_releases {
+    margin: 2em 0em 1em 0em;
+}
+
+
+/* .grid-latestrelease {
+    width: 90%;
+    column-count: 3;
+    margin-top: 15px;
+    text-align: center;
+} */
+
+
+/* .grid-latestrelease-column {
+    column-count: 3;
+    margin: 0.5em;
+}
+
+.grid-latestrelease-column:hover {
+    opacity: 0.3;
+} */
+
+.shirt_image {
+    margin-bottom: 1px;
+    text-align: center;
+}
+
+.shirt_image img {
+    width: 90%;
+}
+
+.shirt_specs {
+    text-align: center;
+    font-size: 15px;
+}
+
+.shirt_specs p a {
+    text-decoration: none;
+}
+
+.shirt_specs_brand {
+    text-transform: uppercase;
+    font-family: "Bangers", cursive;
+    font-size: 17px;
+    font-weight: bolder;
+}
+
+.shirt_specs_name {
+    margin-top: -15px;
+    font-family: "Shadows Into Light", cursive;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+
+/* .shirt_specs_description {
+    margin-top: -8px;
+    text-transform: capitalize;
+} */
+
+.shirt_specs_price {
+    margin-top: -3px;
+    font-weight: 500;
+}
+
+.grid-latestrelease-column a {
+    text-decoration: none;
+    color: black;
+}

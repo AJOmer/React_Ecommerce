@@ -11,21 +11,24 @@ nav {
 }
 
 .logo {
-    width: 25%;
-    text-align: left;
+    width: 95%;
+    text-align: center;
     font-family: "Permanent Marker", cursive;
     padding-left: 40px;
 }
 
 .logo h3 a {
-    color: rgb(226, 226, 226);
+    font-family: "Special Elite", cursive;
+    color: rgb(7, 6, 6);
     text-transform: uppercase;
     letter-spacing: 4px;
-    font-size: 29px;
+    font-size: 33px;
     text-decoration: none;
     vertical-align: middle;
 }
 
+
+/* 
 .nav-links {
     display: flex;
     justify-content: space-evenly;
@@ -33,7 +36,7 @@ nav {
     font-family: "Montserrat", sans-serif;
     padding: 0px 10px;
     margin-top: 15px;
-}
+} */
 
 .right-nav-links {
     display: flex;
@@ -51,14 +54,15 @@ nav {
     list-style: none;
 }
 
-.nav-links a,
+
+/* .nav-links a,
 .right-nav-links a {
     color: rgb(226, 226, 226);
     text-transform: uppercase;
     text-decoration: none;
     letter-spacing: 1px;
     font-size: 15px;
-}
+} */
 
 .right-nav-links a {
     font-size: 18px;
@@ -78,6 +82,33 @@ nav {
     left: -8px;
 }
 
-.accountpage {
-    color: black;
+#mySidenav a {
+    position: absolute;
+    left: -70px;
+    transition: 0.3s;
+    padding: 15px;
+    width: 100px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    border-radius: 0 5px 5px 0;
+}
+
+#mySidenav a:hover {
+    left: 0;
+}
+
+#about {
+    top: 310px;
+    background-color: #000000;
+}
+
+#home {
+    top: 170px;
+    background-color: #000000;
+}
+
+#login {
+    top: 240px;
+    background-color: #000000;
 }
