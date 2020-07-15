@@ -92,8 +92,7 @@ const HeroImage = () => {
         /ButtonBack>{" "} <
         ButtonNext className = "buttonnext" >
         <
-        i className = "fa fa-angle-right"
-        aria = "true" / >
+        i className = "fa fa-angle-right" / >
         <
         /ButtonNext>{" "} <
         DotGroup className = "dotgroup" / >
