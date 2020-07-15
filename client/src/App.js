@@ -49,7 +49,7 @@ const App = () => {
         <
         Route exact path = "/products/shirts"
         component = { ShirtCollection }
-        /> <
+        />{" "} <
         Route exact path = "/products/shirts/:id"
         component = { PageLayout }
         />{" "} <
