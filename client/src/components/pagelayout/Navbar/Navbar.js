@@ -16,7 +16,7 @@ const Navbar = (props) => {
         /h3>{" "} <
         /div>{" "} <
         div id = "mySidenav"
-        class = "sidenav" >
+        className = "sidenav" >
         <
         Link id = "about"
         to = "/products/shirts" >
@@ -28,7 +28,7 @@ const Navbar = (props) => {
         /Link>{" "} <
         Link id = "login"
         to = "/account/login" >
-        Login { " " } <
+        Account { " " } <
         /Link>{" "} <
         /div>{" "} <
         /nav>
