@@ -1,3 +1,8 @@
+.row {
+    width: 98%;
+    margin: 0 auto;
+}
+
 .recent_releases {
     margin: 2em 0em 1em 0em;
 }
@@ -67,4 +72,9 @@
 .grid-latestrelease-column a {
     text-decoration: none;
     color: black;
+}
+
+#mainbutt {
+    margin-left: 40%;
+    margin-top: 15px;
 }

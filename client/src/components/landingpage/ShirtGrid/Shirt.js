@@ -6,7 +6,7 @@ import "./ShirtsGrid.css";
 
 const Shirt = ({ shirt: { _id, name, brand, images, retail_price } }) => {
     return ( <
-        div className = "grid-latestrelease-column " >
+        div className = "grid-latestrelease-column" >
         <
         Link to = { `/products/shirts/${_id}` } > { " " } <
         div className = "shirt_image" >

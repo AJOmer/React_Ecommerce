@@ -31,17 +31,18 @@ const ShirtsGrid = ({ getShirts, shirts, loadingShirts }) => {
                     ))
                 } { " " } <
                 /div>{" "} <
-                Link to = "/products/shirts" >
-                <
-                button className = "btn btn-outline-dark" > { " " }
-                See Shirt Collection { " " } <
-                /button>{" "} <
-                /Link>{" "} <
                 /div>
             ) : ( <
                 Loading / >
             )
         } { " " } <
+        Link to = "/products/shirts" >
+        <
+        button id = "mainbutt"
+        className = "btn btn-outline-dark" > { " " }
+        See Shirt Collection { " " } <
+        /button>{" "} <
+        /Link>{" "} <
         /div>
     );
 };
